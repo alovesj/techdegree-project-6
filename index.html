@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Media Element Player</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="css/mediaelementplayer.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+.mejs__overlay-button {
+	background-image: url("img/mejs-controls.svg");
+}
+.mejs__overlay-loading-bg-img {
+	background-image: url("img/mejs-controls.svg");
+}
+.mejs__button > button {
+	background-image: url("img/mejs-controls.svg");
+}
+</style>
+
+
+</head>
+  <body>
+    <div class="videoWrapper">
+      <video src="media/video.mp4" width="640" height="350" type="video/mp4" class="mejs__player" data-mejsoptions></video>
+      
+    </div>
+
+
+    <script
+  src="http://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+    <script src="js/mediaelement-and-player.min.js"></script>
+    <script>
+      $('video').mediaelementplayer({features:['playpause', 'current', 'progress', 'duration', 'tracks', 'volume', 'fullscreen' ],
+      useDefaultControls 'false',
+      startLanguage: 'en'
+
+    });
+
+    </script>
+  </body>
+</html>

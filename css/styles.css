@@ -1,0 +1,11 @@
+* {
+  box-sizing: border-box;
+}
+/* .container {
+  max-width: 100%;
+} */
+.videoWrapper {
+  margin: 0 auto;
+  display: block;
+  width: 640px;
+}
