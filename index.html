@@ -1,113 +1,99 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Media Element Player</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link href="css/mediaelementplayer.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
-    <style>
-.mejs__overlay-button {
-	background-image: url("img/mejs-controls.svg");
-}
-.mejs__overlay-loading-bg-img {
-	background-image: url("img/mejs-controls.svg");
-}
-.mejs__button > button {
-	background-image: url("img/mejs-controls.svg");
-}
-</style>
+
+<head>
+  <meta charset="utf-8">
+  <title>Media Element Player</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link href="css/mediaelementplayer.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    .mejs__overlay-button {
+      	background-image: url("img/mejs-controls.svg");
+      }
+      .mejs__overlay-loading-bg-img {
+      	background-image: url("img/mejs-controls.svg");
+      }
+      .mejs__button > button {
+      	background-image: url("img/mejs-controls.svg");
+      }
+    </style>
 
 
 </head>
-  <body class="container">
-    <div class="videoWrapper">
-      <video  id= "video" width="640" height="350" type="video/mp4" class="mejs__player" data-mejsoptions>
-        <source src="media/video.ogg">
-          <source src="media/video.mp4">
-      </video>
 
-    </div>
-    <div class="text">
-            <p>
-              <span class= "capt" data-start="0.240" data-end="4.130">  Now that we've looked at the architecture
-              of the internet, let's see how you might</span>
-              <span class= "capt" data-start="4.130" data-end="7.535">connect your personal devices to
-              the internet inside your house.</span>
-              <span class= "capt" data-start="7.535" data-end="11.270"></span>Well there are many ways to
-              connect to the internet, and
-              <span class= "capt" data-start="11.270" data-end="13.960">most often people connect wirelessly.</span>
-            <br>
-              <span class= "capt" data-start="13.960" data-end="17.940">Let's look at an example of how
-              you can connect to the internet.</span>
-              <span class= "capt" data-start="17.940" data-end="22.370">If you live in a city or a town,
-              you probably have a coaxial cable for</span>
-              <span class= "capt" data-start="22.370" data-end="26.880">cable Internet, or a phone line if you
-              have DSL, running to the outside of</span>
-              <span class= "capt" data-start="26.880" data-end="30.920">your house, that connects you to
-              the Internet Service Provider, or ISP.</span>
-              <span class= "capt" data-start="32.100" data-end="34.730">If you live far out in the country,
-              you'll more likely have</span>
-              <span class= "capt" data-start="34.730" data-end="39.430">a dish outside your house, connecting
-              you wirelessly to your closest ISP, or</span>
-              <span class= "capt" data-start="39.430" data-end="41.190">you might also use the telephone system.</span>
-            <br>
-              <span class= "capt" data-start="42.350" data-end="46.300">Whether a wire comes straight from
-              the ISP hookup outside your house, or</span>
-              <span class= "capt" data-start="46.300" data-end="49.270">  it travels over radio
-              waves from your roof,</span>
-              <span class= "capt" data-start="49.270" data-end="53.760">the first stop a wire will make once
-              inside your house, is at your modem.</span>
-              <span class= "capt" data-start="53.760" data-end="57.780">A modem is what connects the internet
-              to your network at home.</span>
-              <span class= "capt" data-start="57.780" data-end="1:00.150">A few common residential modems are DSL or</span>
-          </p>
+<body class="container">
+  <div class="videoWrapper">
+    <video id="video" width="640" height="350" type="video/mp4" class="mejs__player" data-mejsoptions>
+      <source src="media/video.ogg">
+      <source src="media/video.mp4">
+    </video>
+
+  </div>
+  <div class="text">
+    <p><span class="capt" data-start="0.240" data-end="4.130">Now that we've looked at the architecture
+        of the internet, let's see how you might</span>
+      <span class="capt" data-start="4.130" data-end="7.535">connect your personal devices to
+        the internet inside your house.</span>
+      <span class="capt" data-start="7.535" data-end="11.270"></span>Well there are many ways to
+      connect to the internet, and
+      <span class="capt" data-start="11.270" data-end="13.960">most often people connect wirelessly.</span>
+      <br>
+      <span class="capt" data-start="13.960" data-end="17.940">Let's look at an example of how
+        you can connect to the internet.</span>
+      <span class="capt" data-start="17.940" data-end="22.370">If you live in a city or a town,
+        you probably have a coaxial cable for</span>
+      <span class="capt" data-start="22.370" data-end="26.880">cable Internet, or a phone line if you
+        have DSL, running to the outside of</span>
+      <span class="capt" data-start="26.880" data-end="30.920">your house, that connects you to
+        the Internet Service Provider, or ISP.</span>
+      <span class="capt" data-start="32.100" data-end="34.730">If you live far out in the country,
+        you'll more likely have</span>
+      <span class="capt" data-start="34.730" data-end="39.430">a dish outside your house, connecting
+        you wirelessly to your closest ISP, or</span>
+      <span class="capt" data-start="39.430" data-end="41.190">you might also use the telephone system.</span>
+      <br>
+      <span class="capt" data-start="42.350" data-end="46.300">Whether a wire comes straight from
+        the ISP hookup outside your house, or</span>
+      <span class="capt" data-start="46.300" data-end="49.270"> it travels over radio
+        waves from your roof,</span>
+      <span class="capt" data-start="49.270" data-end="53.760">the first stop a wire will make once
+        inside your house, is at your modem.</span>
+      <span class="capt" data-start="53.760" data-end="57.780">A modem is what connects the internet
+        to your network at home.</span>
+      <span class="capt" data-start="57.780" data-end="1:00.150">A few common residential modems are DSL or</span>
+    </p>
   </div>
 
 
 
-    <script
-  src="http://code.jquery.com/jquery-3.2.1.min.js"
-  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-  crossorigin="anonymous"></script>
-    <script src="js/mediaelement-and-player.min.js"></script>
+  <script src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="js/mediaelement-and-player.min.js"></script>
 
-    <!-- <script>
-        const vid = document.getElementById('#video');
-        const currentTime = vid.currentTime;
-        const captStart = document.querySelector(`span[data-start="${e.data-start}"]`);
-        const captEnd = document.querySelector(`span[data-end="${e.data-end}"]`);
+  <script>
+    const vid = document.getElementById('video');
+    const p = document.getElementsByTagName('p');
+    const span = document.getElementsByTagName('span');
+    // const captStart = document.getElementByClassName(`span[data-start]`);
+    // const captEnd = document.querySelector(`span[data-end]`);
+    // //const captEnd = document.querySelector(`span[data-end="${e.data-end}"]`);
 
-        // function Text(e) {
-        window.addEventListener('ontimeupdate', function(e){
+    //create and event listener that will trigger as the video time updates, attach it to the video element
+    vid.addEventListener('timeupdate', () => {
 
-          if (currentTime == captStart) {
-            console.log(currentTime);
+      //inside the event listener. loop over each span element
+      for (let i = 0; i < span.length; i += 1) {
+        if(vid.currentTime > span('data-start').value && vid.currentTime < span('data-end').value {
+            span[i].className = 'highlight';
+          } else {
+            span[i].className = 'capt';
+          });
+        };
 
-          }
-        });
 
-    </script> -->
-  </body>
+    });
+  </script>
+</body>
 
-
-   <!-- //
-   // }
-   //
-   //
-   //
-   //  //When video time matches data-start time  span caption
-   // if video.ontimeupdate = startTime
-   //
-   // function() {myFunction()};
-   //  //When data-start matches time add class highlight
-   //  //When data-end matches time remove class highlight
-   //  //When span is clicked jump to same time in video
-   //
-   //    window.addEvenListener('timeUpdate', function(e){
-   //      const captStart = document.querySelector(`span[data-start="${e.data-start}"]`);
-   //      return captStart;
-   //
-   //    }); -->
 </html>
