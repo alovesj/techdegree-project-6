@@ -9,7 +9,7 @@
   <link href="css/mediaelementplayer.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
   <style>
-    .mejs__overlay-button {
+      .mejs__overlay-button {
       	background-image: url("img/mejs-controls.svg");
       }
       .mejs__overlay-loading-bg-img {
@@ -29,6 +29,7 @@
       <source src="media/video.ogg">
       <source src="media/video.mp4">
     </video>
+
 
   </div>
   <div class="text">
@@ -75,7 +76,7 @@
     const vid = document.getElementById('video');
     const p = document.getElementsByTagName('p');
     const span = document.getElementsByTagName('span');
-    // const captStart = document.getElementByClassName(`span[data-start]`);
+    // const captStart = document.querySelector(`span[data-start]`);
     // const captEnd = document.querySelector(`span[data-end]`);
     // //const captEnd = document.querySelector(`span[data-end="${e.data-end}"]`);
 
@@ -83,12 +84,12 @@
     vid.addEventListener('timeupdate', () => {
 
       //inside the event listener. loop over each span element
-      for (let i = 0; i < span.length; i += 1) {
-        if(vid.currentTime > span('data-start').value && vid.currentTime < span('data-end').value {
+      for (i = 0; i < span.length; i += 1) {
+        if(vid.currentTime > span('data-start') && vid.currentTime < span('data-end')){
             span[i].className = 'highlight';
           } else {
             span[i].className = 'capt';
-          });
+          };
         };
 
 
