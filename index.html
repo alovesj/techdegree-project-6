@@ -37,8 +37,8 @@
         of the internet, let's see how you might</span>
       <span class="capt" data-start="4.130" data-end="7.535">connect your personal devices to
         the internet inside your house.</span>
-      <span class="capt" data-start="7.535" data-end="11.270"></span>Well there are many ways to
-      connect to the internet, and
+      <span class="capt" data-start="7.535" data-end="11.270">Well there are many ways to
+      connect to the internet, and</span>
       <span class="capt" data-start="11.270" data-end="13.960">most often people connect wirelessly.</span>
       <br>
       <span class="capt" data-start="13.960" data-end="17.940">Let's look at an example of how
@@ -71,30 +71,9 @@
 
   <script src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
   <script src="js/mediaelement-and-player.min.js"></script>
-
-  <script>
-    const vid = document.getElementById('video');
-    const p = document.getElementsByTagName('p');
-    const span = document.getElementsByTagName('span');
-    // const captStart = document.querySelector(`span[data-start]`);
-    // const captEnd = document.querySelector(`span[data-end]`);
-    // //const captEnd = document.querySelector(`span[data-end="${e.data-end}"]`);
-
-    //create and event listener that will trigger as the video time updates, attach it to the video element
-    vid.addEventListener('timeupdate', () => {
-
-      //inside the event listener. loop over each span element
-      for (i = 0; i < span.length; i += 1) {
-        if(vid.currentTime > span('data-start') && vid.currentTime < span('data-end')){
-            span[i].className = 'highlight';
-          } else {
-            span[i].className = 'capt';
-          };
-        };
+  <script src="js/app.js"></script>
 
 
-    });
-  </script>
 </body>
 
 </html>
