@@ -1,36 +1,39 @@
 
-const vid = document.getElementById('video');
-const span = document.getElementsByTagName('span');
-const caption = document.getElementsByClassName('capt');
-const captStart = document.querySelectorAll('caption.dataset');
-const dataset = span.dataset;
-  // const captEnd = document.querySelector(`span[data-end]`);
-  // //const captEnd = document.querySelector(`span[data-end="${e.data-end}"]`);
+const vid = document.querySelector('video');
+const captions = document.querySelectorAll('.text .capt');
 
-  //create and event listener that will trigger as the video time updates, attach it to the video element
-//vid.addEventListener('timeupdate', () => {
+//create and event listener that will trigger as the vid time updates, attach it to the vid element
+vid.addEventListener('timeupdate', () => {
+  for (let i = 0; i < captions.length; i++) {
+    const caption = captions[i];
+    let start = caption.dataset.start;
+    let end = caption.dataset.end;
+    if (vid.currentTime >= start && vid.currentTime < end) {
+      caption.classList.add("highlight");
+    } else {
+      caption.classList.remove("highlight");
+    }
+  }
+});
 
-    //inside the event listener. loop over each span element
-console.log(caption.dataset.start);
-
-if(vid.currentTime == captStart) {
-  console.log('hiya');
-}
-//});
-
-
-
-
-//caption.className = 'highlight';
+const span = document.querySelector('span');
+const spanTime = document.querySelector('span').dataset.start;
+const video = document.querySelector('video');
+//check methods on video element
+span.addEventListener('click', () => {
+  for (let i = 0; i < span.length; i++) {
+    const chosenspan = span[i];
+    chosenspan.classList.add('highlight');
 
 
-// for (let i = 0; i < caption.length; i += 1) {
-//       if(vid.currentTime > captStart){
-//           span[i].className = 'highlight';
-//         } else {
-//           caption[i].className = 'capt';
-//         };
-//       };
-//
-//
-//   });
+
+
+
+
+    //start back here
+    //found how to make them both numbers, now I need to make the span clickable
+    video.currentTime == Number(spanTime);
+    console.log(spanTime);
+  }
+
+  });
