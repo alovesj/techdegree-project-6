@@ -1,6 +1,7 @@
 
 const vid = document.querySelector('video');
 const captions = document.querySelectorAll('.text .capt');
+const spans = document.querySelectorAll('span');
 
 //create and event listener that will trigger as the vid time updates, attach it to the vid element
 vid.addEventListener('timeupdate', () => {
@@ -16,24 +17,31 @@ vid.addEventListener('timeupdate', () => {
   }
 });
 
-const span = document.querySelector('span');
-const spanTime = document.querySelector('span').dataset.start;
-const video = document.querySelector('video');
-//check methods on video element
-span.addEventListener('click', () => {
-  for (let i = 0; i < span.length; i++) {
-    const chosenspan = span[i];
-    chosenspan.classList.add('highlight');
+spans.addEventListener('click',() => {
+  for (let i = 0; i < spans.length; i++) 
+
+
+});
+// const span = document.querySelectorAll('span');
+// //check methods on video element
+// span.addEventListener('click', () => {
+//
+//     caption.classList.add("highlight");
+//
+//     let start = caption.dataset.start;
+//     vid.currentTime = start;
+//   });
+//
 
 
 
 
 
 
-    //start back here
-    //found how to make them both numbers, now I need to make the span clickable
-    video.currentTime == Number(spanTime);
-    console.log(spanTime);
-  }
-
-  });
+  //   //start back here
+  //   //found how to make them both numbers, now I need to make the span clickable
+  //   video.currentTime == Number(spanTime);
+  //   console.log(spanTime);
+  // }
+  //
+  // });
