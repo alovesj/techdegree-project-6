@@ -1,3 +1,8 @@
+$('video').mediaelementplayer({
+  stretching: 'responsive',
+  features: ['playpause', 'current', 'progress', 'duration', 'volume', 'fullscreen'],
+});
+
 const vid = document.querySelector('video');
 const captions = document.querySelectorAll('.text .capt');
 const spans = document.querySelectorAll('span');
