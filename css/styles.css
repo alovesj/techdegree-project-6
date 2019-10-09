@@ -47,21 +47,3 @@ p {
   }
 
 }
-<!-- //
-// }
-//
-//
-//
-//  //When video time matches data-start time  span caption
-// if video.ontimeupdate = startTime
-//
-// function() {myFunction()};
-//  //When data-start matches time add class highlight
-//  //When data-end matches time remove class highlight
-//  //When span is clicked jump to same time in video
-//
-//    window.addEvenListener('timeUpdate', function(e){
-//      const captStart = document.querySelector(`span[data-start="${e.data-start}"]`);
-//      return captStart;
-//
-//    }); -->
